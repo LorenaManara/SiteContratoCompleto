@@ -1,43 +1,33 @@
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
-import Footer from './components/layout/Footer'
-import Navbar from './components/layout/Navbar'
-import Container from './components/layout/Container'
+import {BrowserRouter as Router, Routes, Route,} from 'react-router-dom'
 import Home from './components/pages/Home'
-import Projects from './components/pages/Projects'
-import NewProject from './components/pages/NewProject'
 import Company from './components/pages/Company'
-import Contact from './components/pages/Contact'
+import Contato from './components/pages/Contato'
+import NovoProjeto from './components/pages/NovoProjeto'
 import Project from './components/pages/Project'
+import Projects from './components/pages/Projects'
+
+import Container from './components/pages/layout/Container'
+import NavBar from './components/pages/layout/NavBar'
+import Footer from './components/pages/layout/Footer'
 
 function App() {
   return (
     <Router>
-      <Navbar />
-      <Switch>
-        <Container customClass="min-height">
-          <Route exact path="/">
-            <Home />
-          </Route>
-          <Route path="/projects">
-            <Projects />
-          </Route>
-          <Route path="/company">
-            <Company />
-          </Route>
-          <Route path="/contact">
-            <Contact />
-          </Route>
-          <Route path="/newproject">
-            <NewProject />
-          </Route>
-          <Route path="/project/:id">
-            <Project />
-          </Route>
-        </Container>
-      </Switch>
+      <NavBar />
+
+      <Container customClass="min-height">
+        <Routes>
+          <Route exact path="/" element={<Home/>}/>
+          <Route path="/contato" element={<Contato />}/>
+          <Route path="/company" element={<Company />}/>
+          <Route path="/novoprojeto" element={<NovoProjeto />}/>
+          <Route path="/projects" element={<Projects />}/>
+          <Route path="/project/:id" element={<Project />}/>
+        </Routes>
+      </Container>
       <Footer />
     </Router>
-  )
+  );
 }
 
-export default App
+export default App;

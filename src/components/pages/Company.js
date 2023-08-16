@@ -1,9 +1,5 @@
-function Company() {
-  return (
-    <section>
-      <h1>Sobre a empresa</h1>
-    </section>
-  );
+function Company(){
+    return <h1>Company</h1>
 }
 
-export default Company;
+export default Company
