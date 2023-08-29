@@ -9,8 +9,8 @@ import Loading from './layout/Loading'
 import Container from './layout/Container'
 import ProjetoForm from '../project/ProjetoForm'
 import Message from './layout/Message'
-import ServiceForm from '../Service/ServiceForm'
-import ServiceCard from '../Service/ServiceCard'
+import ServiceForm from '../service/ServiceForm'
+import ServiceCard from '../service/ServiceCard'
 
 function Project(){
 

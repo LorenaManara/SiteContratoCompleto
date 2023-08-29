@@ -12,23 +12,16 @@
       "id": 2
     },
     {
-      "name": "sons",
-      "budget": "70000",
+      "name": "mercado",
+      "budget": "54999",
       "category": {
-        "id": "4",
-        "name": "Planejamento"
+        "id": "2",
+        "name": "Desenvolvimento"
       },
       "const": 0,
-      "services": [
-        {
-          "name": "dev",
-          "cost": "23333",
-          "description": "fazer o projeto",
-          "id": "908b2c7d-6273-42c5-bac5-b0ec04a34ba7"
-        }
-      ],
-      "id": 3,
-      "cost": 23333
+      "services": [],
+      "id": 5,
+      "cost": 0
     }
   ],
   "categories": [
